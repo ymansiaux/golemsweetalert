@@ -34,6 +34,9 @@ golem::add_js_file("script")
 golem::add_js_handler("handlers")
 golem::add_css_file("custom")
 golem::add_sass_file("custom")
+## Ajout de sweetalert2
+golem::use_external_js_file("https://cdn.jsdelivr.net/npm/sweetalert2@11.10.7/dist/sweetalert2.all.min.js")
+golem::use_external_css_file("https://cdn.jsdelivr.net/npm/sweetalert2@11.10.7/dist/sweetalert2.min.css")
 
 ## Add internal datasets ----
 ## If you have data in your package

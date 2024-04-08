@@ -34,7 +34,11 @@ golem_add_external_resources <- function() {
     bundle_resources(
       path = app_sys("app/www"),
       app_title = "golemshinyalert"
-    )
+    ),
+    # Ajout sweetalert2
+    tags$script(src = "https://cdn.jsdelivr.net/npm/sweetalert2@11.10.7/dist/sweetalert2.all.min.js"),
+    tags$link(href = "https://cdn.jsdelivr.net/npm/sweetalert2@11.10.7/dist/sweetalert2.min.css",
+              rel="stylesheet")
     # Add here other external resources
     # for example, you can add shinyalert::useShinyalert()
   )
