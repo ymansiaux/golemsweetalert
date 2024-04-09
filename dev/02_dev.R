@@ -27,6 +27,8 @@ golem::add_module(name = "name_of_module2", with_test = TRUE) # Name of the modu
 ## Creates fct_* and utils_*
 golem::add_fct("helpers", with_test = TRUE)
 golem::add_utils("helpers", with_test = TRUE)
+## sweetalert2
+golem::add_fct("create_alert_title_and_text_under")
 
 ## External resources
 ## Creates .js and .css files at inst/app/www
@@ -34,9 +36,10 @@ golem::add_js_file("script")
 golem::add_js_handler("handlers")
 golem::add_css_file("custom")
 golem::add_sass_file("custom")
-## Ajout de sweetalert2
+## sweetalert2
 golem::use_external_js_file("https://cdn.jsdelivr.net/npm/sweetalert2@11.10.7/dist/sweetalert2.all.min.js")
 golem::use_external_css_file("https://cdn.jsdelivr.net/npm/sweetalert2@11.10.7/dist/sweetalert2.min.css")
+golem::add_js_handler("sweet_alert")
 
 ## Add internal datasets ----
 ## If you have data in your package

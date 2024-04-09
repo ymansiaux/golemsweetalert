@@ -6,4 +6,13 @@
 #' @noRd
 app_server <- function(input, output, session) {
   # Your application server logic
+  observeEvent(
+    input$show_alert,{
+      create_alert_title_and_text_under(
+        title = input$title,
+        text = input$text,
+        icon = input$icon
+      )
+    }
+  )
 }

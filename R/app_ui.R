@@ -10,7 +10,16 @@ app_ui <- function(request) {
     golem_add_external_resources(),
     # Your application UI logic
     fluidPage(
-      h1("golemsweetalert")
+      h1("golemsweetalert"),
+      textInput(inputId = "title",
+                label = "title"),
+      textInput(inputId = "text",
+                label = "text"),
+      radioButtons(inputId = "icon",
+                   label = "icon",
+                   choices = c("warning", "error", "success", "info", "question")),
+      actionButton(inputId = "show_alert",
+                   label = "Alert demo")
     )
   )
 }
@@ -35,7 +44,7 @@ golem_add_external_resources <- function() {
       path = app_sys("app/www"),
       app_title = "golemsweetalert"
     ),
-    # Ajout sweetalert2
+    # sweetalert2
     tags$script(src = "https://cdn.jsdelivr.net/npm/sweetalert2@11.10.7/dist/sweetalert2.all.min.js"),
     tags$link(href = "https://cdn.jsdelivr.net/npm/sweetalert2@11.10.7/dist/sweetalert2.min.css",
               rel="stylesheet")
