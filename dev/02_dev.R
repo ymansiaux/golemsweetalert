@@ -49,7 +49,7 @@ usethis::use_test("app")
 # Documentation
 
 ## Vignette ----
-usethis::use_vignette("golemshinyalert")
+usethis::use_vignette("golemsweetalert")
 devtools::build_vignettes()
 
 ## Code Coverage----

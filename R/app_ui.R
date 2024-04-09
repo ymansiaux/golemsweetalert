@@ -10,7 +10,7 @@ app_ui <- function(request) {
     golem_add_external_resources(),
     # Your application UI logic
     fluidPage(
-      h1("golemshinyalert")
+      h1("golemsweetalert")
     )
   )
 }
@@ -33,7 +33,7 @@ golem_add_external_resources <- function() {
     favicon(),
     bundle_resources(
       path = app_sys("app/www"),
-      app_title = "golemshinyalert"
+      app_title = "golemsweetalert"
     ),
     # Ajout sweetalert2
     tags$script(src = "https://cdn.jsdelivr.net/npm/sweetalert2@11.10.7/dist/sweetalert2.all.min.js"),
