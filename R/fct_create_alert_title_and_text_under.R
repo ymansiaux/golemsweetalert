@@ -1,10 +1,10 @@
 #' create_alert_title_and_text_under
 #'
-#' @description Une fonction pour créer une alerte avec un titre et un texte
+#' @description Creates an alert with a title, a text and an icon
 #' @param title alert title
 #' @param text alert text
 #' @param icon alert icon
-#' @return side effect : créé une alerte
+#' @return side effect : creates an alert
 #'
 #' @noRd
 create_alert_title_and_text_under <- function(
