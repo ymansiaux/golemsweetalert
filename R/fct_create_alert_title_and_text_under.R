@@ -1,7 +1,9 @@
 #' create_alert_title_and_text_under
 #'
 #' @description Une fonction pour créer une alerte avec un titre et un texte
-#'
+#' @param title alert title
+#' @param text alert text
+#' @param icon alert icon
 #' @return side effect : créé une alerte
 #'
 #' @noRd
