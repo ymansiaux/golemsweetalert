@@ -15,4 +15,10 @@ app_server <- function(input, output, session) {
       )
     }
   )
+
+  observeEvent(
+    input$show_alert2,{
+      create_alert_complete()
+    }
+  )
 }

@@ -19,7 +19,14 @@ app_ui <- function(request) {
                    label = "icon",
                    choices = c("warning", "error", "success", "info", "question")),
       actionButton(inputId = "show_alert",
-                   label = "Alert demo")
+                   label = "Alert demo"),
+
+      tags$br(),
+
+      actionButton(inputId = "show_alert2",
+                   label = "Alert demo 2")
+
+
     )
   )
 }
